@@ -1,13 +1,13 @@
 import { useEffect } from "react";
 
 function ChatBot() {
-useEffect(() => {
-  if (document.querySelector("#n8n-chat script")) return;
+  useEffect(() => {
+    if (document.querySelector("#n8n-chat script")) return;
 
-  const script = document.createElement("script");
-  script.type = "module";
+    const script = document.createElement("script");
+    script.type = "module";
 
-  script.textContent = `
+    script.textContent = `
     import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
     createChat({
@@ -23,8 +23,8 @@ useEffect(() => {
     });
   `;
 
-  document.body.appendChild(script);
-}, []);
+    document.body.appendChild(script);
+  }, []);
 
   return <div id="n8n-chat"></div>;
 }
