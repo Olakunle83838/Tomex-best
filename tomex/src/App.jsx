@@ -118,5 +118,15 @@ function App() {
     </>
   )
 }
+import ChatBot from "./Components/ChatBot";
+
+function App() {
+  return (
+    <>
+      {/* Other components */}
+      <ChatBot />
+    </>
+  );
+}
 
 export default App
