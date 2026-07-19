@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+// import vector from "./assets/images/farm-image.jpg";
 import NavBar from "../../Components/NavBar";
 function Home() {
   return (
@@ -24,7 +25,7 @@ function Home() {
             </div>
           </div>
         </section>
-        <img src="./assets/images/Vector.svg" className="vector-aro" alt="" />
+        <img src="./assets/images/Vector.png" className="vector-aro" alt="" />
         <section className="hero-right">
           <img src="./assets/images/farm-image.jpg" alt="" />
         </section>
