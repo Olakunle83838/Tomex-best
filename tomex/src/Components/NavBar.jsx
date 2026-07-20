@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router";
 import "./navBar.css";
 
 function NavBar() {
@@ -27,42 +28,59 @@ function NavBar() {
       <div className={`navLinkContainer ${isOpen ? "open" : ""}`}>
         <ul className="navLinks">
           <li>
-            <a href="#" className="navLink" onClick={() => setIsOpen(false)}>
+            <NavLink
+              to="/"
+              end
+              className="navLink"
+              onClick={() => setIsOpen(false)}
+            >
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="navLink" onClick={() => setIsOpen(false)}>
+            <NavLink
+              to="/marketplace"
+              className="navLink"
+              onClick={() => setIsOpen(false)}
+            >
               Marketplace
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="navLink" onClick={() => setIsOpen(false)}>
+            <NavLink
+              to="/about"
+              className="navLink"
+              onClick={() => setIsOpen(false)}
+            >
               About Us
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="navLink" onClick={() => setIsOpen(false)}>
+            <NavLink
+              to="/contact"
+              className="navLink"
+              onClick={() => setIsOpen(false)}
+            >
               Contact
-            </a>
+            </NavLink>
           </li>
         </ul>
 
         <div className="navBtns">
-          <a
-            href="#"
+          <NavLink
+            to="/login"
             className="navBtn navBtn1"
             onClick={() => setIsOpen(false)}
           >
             Login
-          </a>
-          <a
-            href="#"
+          </NavLink>
+          <NavLink
+            to="/signup"
             className="navBtn navBtn2"
             onClick={() => setIsOpen(false)}
           >
             Sign up
-          </a>
+          </NavLink>
         </div>
       </div>
     </nav>
