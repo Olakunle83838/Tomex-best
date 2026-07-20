@@ -1,3 +1,6 @@
+.home {
+  background-color: #01160f;
+}
 .hero {
   display: flex;
   justify-content: space-between;

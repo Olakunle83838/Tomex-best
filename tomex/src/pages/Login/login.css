@@ -1,0 +1,61 @@
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url("./assets/images/login-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.login-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  inset: 0;
+  margin: auto;
+  width: 723px;
+  height: 674px;
+  border-radius: 30px;
+  background: #165a21;
+  padding: 1rem 0;
+}
+.login {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  color: #fff;
+}
+input {
+  width: 515px;
+  height: 71px;
+  font-size: 24px;
+  font-weight: 700;
+  background: #4fa25a;
+  border: 1px solid #4fa25a;
+  border-radius: 45px;
+  padding: 8px 16px;
+  color: #fff;
+}
+input::placeholder {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+}
+.forgot-pw {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #fff;
+}
+button {
+  width: 547px;
+  height: 87px;
+  font-size: 24px;
+  font-weight: 700;
+  background: #fff;
+  border: 1px solid #4fa25a;
+  border-radius: 45px;
+  color: #000;
+}

@@ -4,7 +4,7 @@ import "./style.css";
 import NavBar from "../../Components/NavBar";
 function Home() {
   return (
-    <div>
+    <div className="home">
       <NavBar />
       <main className="hero">
         <section className="hero-left">
