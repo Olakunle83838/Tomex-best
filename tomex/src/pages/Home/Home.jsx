@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
-// import vector from "./assets/images/farm-image.jpg";
 import NavBar from "../../Components/NavBar";
+
 function Home() {
   return (
     <div className="home">
@@ -16,18 +16,27 @@ function Home() {
             providers work together to reduce post-harvest losses and deliver
             fresh tomatoes efficiently.
           </p>
-          <div>
-            <div className="offer-container">
-              <p className="offer offer-right">Sell Tomatoes</p>
-              <p className="offer ">Buy Tomatoes</p>
-              <p className="offer offer-right">Book Logistics</p>
-              <p className="offer">Find Cold Storage</p>
-            </div>
+
+          <div className="offer-container">
+            <p className="offer offer-right">Sell Tomatoes</p>
+            <p className="offer">Buy Tomatoes</p>
+            <p className="offer offer-right">Book Logistics</p>
+            <p className="offer">Find Cold Storage</p>
           </div>
         </section>
-        <img src="./assets/images/Vector.png" className="vector-aro" alt="" />
+
+        <img
+          src="./assets/images/Vector.png"
+          className="vector-aro"
+          alt="Decorative Arrow"
+        />
+
         <section className="hero-right">
-          <img src="./assets/images/farm-image.jpg" alt="" />
+          <img
+            src="./assets/images/farm-image.jpg"
+            alt="Farm harvest"
+            className="hero-img"
+          />
         </section>
       </main>
     </div>
