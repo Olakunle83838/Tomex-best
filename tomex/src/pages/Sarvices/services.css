@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Background Wrapper */
+.services-page-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f1e8;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  padding: 40px;
+  gap: 50px;
+}
+
+/* Left Hero Image Column */
+.services-hero-column {
+  flex: 0 0 45%;
+  max-width: 45%;
+  display: flex;
+}
+
+.hero-tomatoes-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Right Content Column */
+.services-content-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section Header */
+.services-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.header-leaf {
+  font-size: 1.2rem;
+  color: #2b5c32;
+}
+
+.header-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* 2x3 Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 25px;
+}
+
+/* Individual Service Card */
+.service-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Top Banner / Image Box */
+.service-card-banner {
+  width: 100%;
+  height: 110px;
+  background-color: #d1d5db; /* Light gray placeholder color */
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.service-card-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Floating Icon Circle Badge */
+.service-icon-badge {
+  position: absolute;
+  top: 85px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46px;
+  height: 46px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+/* Bottom White Body Card */
+.service-card-body {
+  background-color: #ffffff;
+  padding: 35px 20px 20px 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.service-card-desc {
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: #555555;
+  font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1100px) {
+  .services-page-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .services-hero-column {
+    max-width: 100%;
+    height: 350px;
+  }
+}
+
+@media (max-width: 650px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}

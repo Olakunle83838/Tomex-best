@@ -6,7 +6,7 @@ function AboutUs() {
     <div className="about-container">
       <div className="about-image-column">
         <img
-          src="./assets/images/Mask.png"
+          src="/assets/images/Mask.png"
           alt="Fresh Tomatoes"
           className="hero-image"
         />
@@ -14,7 +14,7 @@ function AboutUs() {
 
       <div className="about-content-column">
         <div className="section-header">
-          <span className="leaf-icon">🍃</span>
+          <img src="/assets/images/leaf.png" className="leaf-icon" alt="" />
           <h1 className="cursive-title">About Us</h1>
         </div>
 
@@ -38,32 +38,32 @@ function AboutUs() {
 
         <div className="features-grid">
           <div className="feature-item">
-            <img src="./assets/images/good.png" className="check-icon" alt="" />
+            <img src="/assets/images/good.png" className="check-icon" alt="" />
             <span>Always Fresh & Natural Foods</span>
           </div>
           <div className="feature-item highlight">
-            <img src="./assets/images/good.png" className="check-icon" alt="" />
+            <img src="/assets/images/good.png" className="check-icon" alt="" />
             <span>No Synthetic Chemicals</span>
           </div>
           <div className="feature-item">
-            <img src="./assets/images/good.png" className="check-icon" alt="" />
+            <img src="/assets/images/good.png" className="check-icon" alt="" />
             <span>Environment Benefits</span>
           </div>
           <div className="feature-item">
-            <img src="./assets/images/good.png" className="check-icon" alt="" />
+            <img src="/assets/images/good.png" className="check-icon" alt="" />
             <span>Best Prices</span>
           </div>
         </div>
 
         <section className="section-block">
           <div className="section-header center">
-            <img src="./assets/images/leaf.png" className="leaf-icon" alt="" />
+            <img src="/assets/images/leaf.png" className="leaf-icon" alt="" />
             <h2 className="cursive-title">Why Choose Tomex</h2>
           </div>
           <div className="features-grid">
             <div className="feature-item">
               <img
-                src="./assets/images/good.png"
+                src="/assets/images/good.png"
                 className="check-icon"
                 alt=""
               />
@@ -71,7 +71,7 @@ function AboutUs() {
             </div>
             <div className="feature-item">
               <img
-                src="./assets/images/good.png"
+                src="/assets/images/good.png"
                 className="check-icon"
                 alt=""
               />
@@ -79,19 +79,23 @@ function AboutUs() {
             </div>
             <div className="feature-item">
               <img
-                src="./assets/images/good.png"
+                src="/assets/images/good.png"
                 className="check-icon"
                 alt=""
               />
               <span>Easy Transport Booking</span>
             </div>
             <div className="feature-item">
-              <span className="check-icon">✓</span>
+              <img
+                src="/assets/images/good.png"
+                className="check-icon"
+                alt=""
+              />
               <span>Live Order Tracking</span>
             </div>
             <div className="feature-item">
               <img
-                src="./assets/images/good.png"
+                src="/assets/images/good.png"
                 className="check-icon"
                 alt=""
               />
@@ -99,7 +103,7 @@ function AboutUs() {
             </div>
             <div className="feature-item">
               <img
-                src="./assets/images/good.png"
+                src="/assets/images/good.png"
                 className="check-icon"
                 alt=""
               />
@@ -110,7 +114,7 @@ function AboutUs() {
 
         <section className="section-block">
           <div className="section-header center">
-            <img src="./assets/images/leaf.png" className="leaf-icon" alt="" />
+            <img src="/assets/images/leaf.png" className="leaf-icon" alt="" />
             <h2 className="cursive-title">How it Works</h2>
           </div>
 

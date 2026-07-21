@@ -13,8 +13,8 @@ function NavBar() {
     <nav className="navContainer">
       <div className="logo-container">
         <div className="logo">
-          <img src="./assets/images/logo-icon.png" alt="" />
-          <img src="./assets/images/logo-name.png" alt="" />
+          <img src="/assets/images/logo-icon.png" alt="" />
+          <img src="/assets/images/logo-name.png" alt="" />
           <p className="logo-text">Fresh. Fast. Trusted.</p>
         </div>
       </div>
@@ -45,11 +45,11 @@ function NavBar() {
           </li>
           <li>
             <NavLink
-              to="/marketplace"
+              to="/services"
               className="navLink"
               onClick={() => setIsOpen(false)}
             >
-              Marketplace
+              Services
             </NavLink>
           </li>
           <li>

@@ -8,6 +8,7 @@ import AboutUs from "./pages/About/AboutUs";
 import Success from "./pages/success/Success";
 import RoleSelection from "./pages/Role/RoleSelection";
 import FarmerRegistration from "./pages/Registration/FarmerRegistration";
+import Services from "./pages/Sarvices/Services";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/role-selection" element={<RoleSelection />} />
         <Route path="/farmer-registration" element={<FarmerRegistration />} />
         <Route path="/Success" element={<Success />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </>
   );

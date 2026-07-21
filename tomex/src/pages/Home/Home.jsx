@@ -26,18 +26,13 @@ function Home() {
         </section>
 
         <img
-          src="./assets/images/Vector.png"
+          src="/assets/images/Vector.png"
           className="vector-aro"
           alt="Decorative Arrow"
         />
 
         <section className="hero-right">
           <div className="hero-img"> </div>
-          {/* <img
-            src="./assets/images/farm-image.jpg"
-            alt="Farm harvest"
-            className="hero-img"
-          /> */}
         </section>
       </main>
     </div>
