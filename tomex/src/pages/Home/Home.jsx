@@ -32,11 +32,12 @@ function Home() {
         />
 
         <section className="hero-right">
-          <img
+          <div className="hero-img"> </div>
+          {/* <img
             src="./assets/images/farm-image.jpg"
             alt="Farm harvest"
             className="hero-img"
-          />
+          /> */}
         </section>
       </main>
     </div>

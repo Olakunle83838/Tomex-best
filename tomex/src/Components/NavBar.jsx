@@ -11,7 +11,13 @@ function NavBar() {
 
   return (
     <nav className="navContainer">
-      <p className="logo">TOMEX</p>
+      <div className="logo-container">
+        <div className="logo">
+          <img src="./assets/images/logo-icon.png" alt="" />
+          <img src="./assets/images/logo-name.png" alt="" />
+          <p className="logo-text">Fresh. Fast. Trusted.</p>
+        </div>
+      </div>
 
       {/* Hamburger Toggle Button for Mobile */}
       <button
@@ -48,7 +54,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink
-              to="/about"
+              to="/about-us"
               className="navLink"
               onClick={() => setIsOpen(false)}
             >
@@ -75,7 +81,7 @@ function NavBar() {
             Login
           </NavLink>
           <NavLink
-            to="/signup"
+            to="/role-selection"
             className="navBtn navBtn2"
             onClick={() => setIsOpen(false)}
           >

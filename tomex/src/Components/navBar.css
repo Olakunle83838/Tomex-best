@@ -9,18 +9,29 @@
   height: 70px;
   position: relative;
 }
-
-.logo {
-  font-weight: 700;
+.logo-container {
+  position: relative;
   width: 100%;
-  font-size: 32px;
-  color: #fff;
+}
+.logo {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 0;
+  /* bottom: 0; */
+  flex-direction: column;
+  font-weight: 400;
+  /* width: 100%; */
+  font-size: 16px;
+  color: #2d5f2e;
+  /* background: #93bd27; */
   margin: 0;
   line-height: 1;
 }
 
 /* Nav Link & Button Wrapper (Desktop default) */
 .navLinkContainer {
+  padding-top: 3rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -37,14 +48,14 @@
 
 .navLinks a {
   text-decoration: none;
-  color: #fff;
+  color: #2d5f2e;
   font-weight: 400;
   font-size: 16px;
   transition: color 0.2s ease;
 }
 
 .navLinks a:hover {
-  color: #a9d830;
+  color: #2d5f2e;
 }
 
 /* Action Buttons */
@@ -65,22 +76,22 @@
 }
 
 .navBtn1 {
-  border: 1px solid #a9d830;
-  background-color: #a9d830;
-  color: #111;
-}
-
-.navBtn1:hover {
-  background-color: #93bd27;
-}
-
-.navBtn2 {
-  border: 1px solid #a9d830;
+  border: 1px solid #2d5f2e;
+  background-color: #2d5f2e;
   color: #fff;
 }
 
+.navBtn1:hover {
+  background-color: #4e6f4f;
+}
+
+.navBtn2 {
+  border: 1px solid #2d5f2e;
+  color: #2d5f2e;
+}
+
 .navBtn2:hover {
-  background-color: rgba(169, 216, 48, 0.1);
+  background-color: #c6e1c7;
 }
 
 /* Hamburger Icon (Hidden on Desktop) */
