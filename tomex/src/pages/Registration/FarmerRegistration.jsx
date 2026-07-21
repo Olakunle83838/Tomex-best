@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./FarmerRegistration.css";
+import { Link } from "react-router";
 
 function FarmerRegistration() {
   const [formData, setFormData] = useState({
@@ -178,11 +179,13 @@ function FarmerRegistration() {
           </div>
 
           {/* Submit Action */}
-          <div className="form-action">
-            <button type="submit" className="submit-btn">
-              Save and Continue
-            </button>
-          </div>
+          <Link to={"/farmer-verification"}>
+            <div>
+              <button className="submit-btn" type="submit">
+                Save and Continue
+              </button>
+            </div>
+          </Link>
         </form>
       </div>
     </div>

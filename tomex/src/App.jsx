@@ -9,6 +9,8 @@ import Success from "./pages/success/Success";
 import RoleSelection from "./pages/Role/RoleSelection";
 import FarmerRegistration from "./pages/Registration/FarmerRegistration";
 import Services from "./pages/Sarvices/Services";
+import BuyerRegistration from "./pages/Registration/BuyerRegistration";
+import FarmerVerification from "./pages/Registration/FarmerVerification";
 function App() {
   return (
     <>
@@ -21,6 +23,8 @@ function App() {
         <Route path="/farmer-registration" element={<FarmerRegistration />} />
         <Route path="/Success" element={<Success />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/buyer-registration" element={<BuyerRegistration />} />
+        <Route path="/farmer-verification" element={<FarmerVerification />} />
       </Routes>
     </>
   );
