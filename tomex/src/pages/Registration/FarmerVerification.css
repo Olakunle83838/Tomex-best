@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Off-white Page Container */
+.farmer-verify-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f1e8;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.farmer-verify-container {
+  width: 100%;
+  max-width: 920px;
+}
+
+/* Header Text Styles */
+.farmer-verify-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.farmer-verify-header h1 {
+  color: #235c32;
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.farmer-verify-header p {
+  color: #333333;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Form Styles */
+.farmer-verify-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.section-title,
+.form-group label {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.section-sub {
+  font-size: 0.8rem;
+  color: #4a4a4a;
+  font-weight: 500;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Top ID Type 3-Column Grid */
+.id-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+/* Selection Cards Base Styling */
+.select-card {
+  background-color: #faf8f5;
+  border-radius: 20px;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.select-card span {
+  font-size: 0.8rem;
+  color: #333333;
+  font-weight: 500;
+}
+
+.circle-indicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid #a8a095;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.select-card:hover {
+  background-color: #ffffff;
+}
+
+.select-card.selected {
+  background-color: #ffffff;
+  border-color: #235c32;
+}
+
+.select-card.selected .circle-indicator {
+  border-color: #235c32;
+  background-color: #235c32;
+  box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+/* Middle Layout Split (Left & Right Columns) */
+.middle-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 20px;
+}
+
+/* Left Column Styling */
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-column input {
+  width: 100%;
+  max-width: 320px;
+  background-color: #faf8f5;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 14px 20px;
+  font-size: 0.82rem;
+  font-family: inherit;
+  color: #222222;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.left-column input::placeholder {
+  color: #c0b8ac;
+}
+
+.left-column input:focus {
+  background-color: #ffffff;
+  border-color: #235c32;
+  box-shadow: 0 0 0 3px rgba(35, 92, 50, 0.1);
+}
+
+.declaration-section {
+  margin-top: 150px;
+}
+
+.declaration-card {
+  max-width: 420px;
+}
+
+/* Right Column Selfie Upload Styling */
+.right-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.selfie-box {
+  width: 220px;
+  height: 220px;
+  background-color: #e3decb;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.selfie-placeholder {
+  width: 100%;
+  height: 100%;
+}
+
+.selfie-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.browse-btn {
+  background-color: #d1ccbc;
+  color: #333333;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.browse-btn:hover {
+  background-color: #c2bcb0;
+}
+
+/* Action Submit Button */
+.form-action {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  background-color: #235c32;
+  color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  width: 100%;
+  padding: 14px 50px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1a4525;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(35, 92, 50, 0.25);
+}
+
+/* Responsive Handling */
+@media (max-width: 768px) {
+  .id-options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .middle-content-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .declaration-section {
+    margin-top: 30px;
+  }
+
+  .left-column input,
+  .declaration-card {
+    max-width: 100%;
+  }
+
+  .form-action {
+    justify-content: center;
+  }
+
+  .submit-btn {
+    align-items: center;
+    margin: auto;
+    width: 100%;
+  }
+}
