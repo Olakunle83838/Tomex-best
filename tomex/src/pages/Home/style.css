@@ -1,11 +1,9 @@
 /* Container & Base Layout */
 .home {
   align-items: center;
-
   min-height: 100vh;
   margin: auto;
-  /* width: 100vw; */
-  background-image: url("./assets/images/hero-bg.jpg");
+  background-image: url("/assets/images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
