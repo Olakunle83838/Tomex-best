@@ -45,6 +45,9 @@ function Login() {
           <button type="submit" className="login-btn">
             Login
           </button>
+          <Link style={{ textAlign: "center" }} className="login-btn" to={"/"}>
+            Back to home
+          </Link>
         </form>
       </div>
     </main>

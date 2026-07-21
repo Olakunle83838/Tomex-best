@@ -1,5 +1,6 @@
 import React from "react";
 import "./services.css";
+import NavBar from "../../Components/NavBar";
 
 function Services() {
   const servicesData = [
@@ -55,42 +56,45 @@ function Services() {
 
   return (
     <div className="services-page-container">
-      {/* Left Column - Hero Image */}
-      <div className="services-hero-column">
-        <img
-          src="./assets/images/tomatoes-hero.jpg"
-          alt="Fresh Red Tomatoes"
-          className="hero-tomatoes-img"
-        />
-      </div>
-
-      {/* Right Column - Content & Services Cards */}
-      <div className="services-content-column">
-        {/* Section Header */}
-        <div className="services-header">
-          <span className="header-leaf">🍃</span>
-          <h1 className="header-title">Our Services</h1>
+      <NavBar />
+      <div className="services-container">
+        {/* Left Column - Hero Image */}
+        <div className="services-hero-column">
+          <img
+            src="./assets/images/tomatoes-hero.jpg"
+            alt="Fresh Red Tomatoes"
+            className="hero-tomatoes-img"
+          />
         </div>
 
-        {/* 2x3 Services Grid */}
-        <div className="services-grid">
-          {servicesData.map((service) => (
-            <div key={service.id} className="service-card">
-              {/* Top Banner / Image Area */}
-              <div className="service-card-banner">
-                <img src={service.image} alt={service.title} />
-              </div>
+        {/* Right Column - Content & Services Cards */}
+        <div className="services-content-column">
+          {/* Section Header */}
+          <div className="services-header">
+            <span className="header-leaf">🍃</span>
+            <h1 className="header-title">Our Services</h1>
+          </div>
 
-              {/* Floating Center Icon Badge */}
-              <div className="service-icon-badge">{service.icon}</div>
+          {/* 2x3 Services Grid */}
+          <div className="services-grid">
+            {servicesData.map((service) => (
+              <div key={service.id} className="service-card">
+                {/* Top Banner / Image Area */}
+                <div className="service-card-banner">
+                  <img src={service.image} alt={service.title} />
+                </div>
 
-              {/* Bottom White Text Card */}
-              <div className="service-card-body">
-                <h3 className="service-card-title">{service.title}</h3>
-                <p className="service-card-desc">{service.description}</p>
+                {/* Floating Center Icon Badge */}
+                <div className="service-icon-badge">{service.icon}</div>
+
+                {/* Bottom White Text Card */}
+                <div className="service-card-body">
+                  <h3 className="service-card-title">{service.title}</h3>
+                  <p className="service-card-desc">{service.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -63,7 +63,7 @@ function NavBar() {
           </li>
           <li>
             <NavLink
-              to="/contact"
+              // to="/contact"
               className="navLink"
               onClick={() => setIsOpen(false)}
             >

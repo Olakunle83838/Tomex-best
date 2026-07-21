@@ -7,10 +7,14 @@
 }
 
 /* Page Background Wrapper */
+
 .services-page-container {
   width: 100%;
   min-height: 100vh;
   background-color: #f5f1e8;
+}
+.services-container {
+  margin: 5rem auto 0 auto;
   display: flex;
   font-family: "Montserrat", sans-serif;
   padding: 40px;
