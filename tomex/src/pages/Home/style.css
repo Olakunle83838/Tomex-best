@@ -1,8 +1,15 @@
 /* Container & Base Layout */
 .home {
-  background-color: #01160f;
+  align-items: center;
+
   min-height: 100vh;
-  color: #fff;
+  margin: auto;
+  /* width: 100vw; */
+  background-image: url("./assets/images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero {
@@ -10,14 +17,15 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
+  align-self: center;
+  margin: 6rem auto 0 auto;
+  padding: 4rem 2rem 0 2rem;
   gap: 2rem;
 }
 
 /* Left Section Content */
 .hero-left {
-  flex: 1;
+  flex: 2;
   max-width: 550px;
 }
 
@@ -25,7 +33,7 @@
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 700;
   line-height: 1.2;
-  color: #fff;
+  color: #2d5f2e;
   margin-bottom: 1.5rem;
 }
 
@@ -33,7 +41,7 @@
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #e0e0e0;
+  color: #000;
   margin-bottom: 2rem;
 }
 
@@ -49,8 +57,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 1px solid #a9d830;
-  color: #fff;
+  border: 1px solid #2d5f2e;
+  color: #2d5f2e;
   padding: 12px 16px;
   border-radius: 10px;
   font-size: 0.95rem;
@@ -62,12 +70,12 @@
 
 .offer:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(169, 216, 48, 0.2);
+  box-shadow: 0 4px 12px #2d5f2e;
 }
 
 .offer-right {
-  background-color: #a9d830;
-  color: #01160f;
+  background-color: #2d5f2e;
+  color: #fff;
 }
 
 /* Vector Arrow Decoration */
@@ -88,7 +96,7 @@
   width: 100%;
   max-width: 550px;
   height: auto;
-  max-height: 600px;
+  /* max-height: 600px; */
   object-fit: cover;
   border-radius: 16px;
 }
@@ -127,6 +135,10 @@
     max-width: 400px;
     grid-template-columns: 1fr 1fr;
     gap: 0.75rem;
+  }
+  .offer {
+    color: #fff;
+    font-weight: 500;
   }
 
   .hero-right {

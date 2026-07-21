@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page Background Wrapper */
+.role-page-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("./assets/images/login-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+/* Modal Outer Card */
+.role-modal-card {
+  background-color: #0d6d33;
+  width: 100%;
+  max-width: 780px;
+  border-radius: 24px;
+  padding: 40px 50px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Headers */
+.role-header-title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.role-header-sub {
+  color: #e2f0e6;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  max-width: 480px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+/* 2x2 Grid Layout */
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+/* Initial State Card */
+.role-card {
+  background-color: #f7f5e8;
+  border-radius: 16px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.role-card:hover {
+  transform: translateY(-2px);
+}
+
+.role-icon {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #0d6d33;
+  transition: color 0.25s ease;
+}
+
+.role-card-title {
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  transition: color 0.25s ease;
+}
+
+.role-card-desc {
+  color: #555555;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+/* ==========================================
+   State Changes When Any Card is Selected
+   ========================================== */
+
+/* Active Selected Card Style */
+.role-grid.has-selection .role-card.selected {
+  background-color: #f7f5e8;
+  border-color: transparent;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.role-grid.has-selection .role-card.selected .role-card-title {
+  color: #0d6d33;
+}
+
+.role-grid.has-selection .role-card.selected .role-card-desc {
+  color: #333333;
+}
+
+/* Unselected Cards Style (Muted Green) */
+.role-grid.has-selection .role-card.unselected {
+  background-color: #5b9d6f;
+}
+
+.role-grid.has-selection .role-card.unselected .role-icon,
+.role-grid.has-selection .role-card.unselected .role-card-title {
+  color: #183e23;
+}
+
+.role-grid.has-selection .role-card.unselected .role-card-desc {
+  color: #234f2e;
+}
+
+/* Bottom Action Button */
+.role-action-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.role-continue-btn {
+  background-color: #f7f5e8;
+  color: #222222;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 48px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.role-continue-btn:hover:not(:disabled) {
+  background-color: #ffffff;
+  transform: scale(1.03);
+}
+
+.role-continue-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 650px) {
+  .role-modal-card {
+    padding: 30px 20px;
+  }
+
+  .role-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
